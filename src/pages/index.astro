@@ -51,10 +51,10 @@ import Layout from '../layouts/Layout.astro';
 			<div class="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] [background-size:24px_24px]"></div>
 
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-				<div class="lg:grid lg:grid-cols-12 lg:gap-16 items-center">
-					
+				<div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+
 					<!-- Text Content -->
-					<div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
+					<div class="sm:text-center md:max-w-2xl md:mx-auto lg:text-left">
 						<div class="inline-flex items-center text-brand-accent font-semibold tracking-wide uppercase text-sm mb-6 border border-brand-accent/30 bg-brand-accent/5 rounded-full px-3 py-1">
 							<span class="w-2 h-2 bg-brand-accent rounded-full mr-2 animate-pulse"></span>
 							Based in Whangarei
@@ -76,16 +76,13 @@ import Layout from '../layouts/Layout.astro';
 					</div>
 
 					<!-- Hero Image -->
-					<div class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6">
-						<div class="relative mx-auto w-full rounded-lg shadow-2xl lg:max-w-md">
-							<div class="relative block w-full bg-brand-dark rounded-lg overflow-hidden border-4 border-gray-800">
-								<!-- Using deck photo but darkening it slightly to make text pop if needed -->
-								<div class="aspect-w-4 aspect-h-5">
-									<img src="/work-deck.jpg" alt="Deck construction" class="w-full h-full object-cover" />
-								</div>
+					<div class="mt-12 lg:mt-0">
+						<div class="relative group">
+							<!-- Industrial Frame effect -->
+							<div class="absolute -inset-2 border-2 border-brand-accent/30 rounded-xl transform rotate-2 group-hover:rotate-1 transition-transform"></div>
+							<div class="relative rounded-xl overflow-hidden shadow-2xl h-[500px] lg:h-[600px]">
+								<img src="/work-deck.jpg" alt="Deck construction" class="w-full h-full object-cover" />
 							</div>
-							<!-- Industrial Decorative Element -->
-							<div class="absolute -bottom-4 -right-4 w-24 h-24 bg-brand-accent/10 border border-brand-accent/50 rounded-full -z-10 blur-xl"></div>
 						</div>
 					</div>
 				</div>
@@ -96,11 +93,31 @@ import Layout from '../layouts/Layout.astro';
 		<section id="about" class="py-24 bg-brand-dark relative border-t border-gray-800">
 			<!-- Subtle background texture -->
 			<div class="absolute inset-0 opacity-5 bg-[radial-gradient(#4b5563_1px,transparent_1px)] [background-size:16px_16px]"></div>
-			
+
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
 				<div class="lg:grid lg:grid-cols-12 lg:gap-16 items-start">
-					
-					<!-- Left Column: The Story -->
+
+					<!-- Left Column: The Image & Quote -->
+					<div class="lg:col-span-5 mb-12 lg:mb-0">
+						<div class="relative group">
+							<!-- Industrial Frame effect -->
+							<div class="absolute -inset-2 border-2 border-gray-700 rounded-xl transform -rotate-2 group-hover:-rotate-1 transition-transform"></div>
+							<div class="relative rounded-xl overflow-hidden shadow-2xl bg-gray-800">
+								<img src="/profile.jpg" alt="Reuben and wife" class="w-full h-auto grayscale contrast-125 hover:grayscale-0 transition-all duration-700 ease-in-out" />
+							</div>
+
+							<!-- Floating Quote Card -->
+							<div class="absolute -bottom-6 -right-6 bg-brand-accent p-6 rounded-lg shadow-xl max-w-xs transform rotate-1 border border-white/20">
+								<svg class="h-8 w-8 text-black/20 mb-2" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 8.44772 14.017 9V11C14.017 11.5523 13.5693 12 13.017 12H12.017V5H22.017V15C22.017 18.3137 19.3307 21 16.017 21H14.017ZM5.0166 21L5.0166 18C5.0166 16.8954 5.91203 16 7.0166 16H10.0166C10.5689 16 11.0166 15.5523 11.0166 15V9C11.0166 8.44772 10.5689 8 10.0166 8H6.0166C5.46432 8 5.0166 8.44772 5.0166 9V11C5.0166 11.5523 4.56889 12 4.0166 12H3.0166V5H13.0166V15C13.0166 18.3137 10.3303 21 7.0166 21H5.0166Z"/></svg>
+								<p class="text-brand-dark font-bold text-sm leading-relaxed">
+									"Thank you for being so fast and efficient."
+								</p>
+								<p class="text-brand-dark/60 text-xs font-bold uppercase mt-3">— Happy Client</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Right Column: The Story -->
 					<div class="lg:col-span-7">
 						<div class="inline-flex items-center px-3 py-1 rounded-full border border-yellow-500/30 bg-yellow-500/10 text-yellow-400 text-xs font-bold uppercase tracking-widest mb-6">
 							Family Owned & Operated
@@ -109,16 +126,19 @@ import Layout from '../layouts/Layout.astro';
 							Big Infrastructure Discipline.<br>
 							<span class="text-gray-500">Small Business Care.</span>
 						</h2>
-						
+
 						<div class="prose prose-lg prose-invert text-gray-400 mb-8">
 							<p>
-								I'm Reuben Johnson. While Johnson & Sons is a family business, my background isn't just residential—it's industrial.
+								Meet Reuben and Tinelle Johnson. We own and run Johnson & Sons together.
 							</p>
 							<p>
-								Before starting this company, I spent over 10 years with <strong>Fletcher Engineering</strong> on major NZ infrastructure. I served as a foreman and supervisor on projects like the <strong>North Shore Hospital</strong> and the <strong>ANZ Tower extension</strong>.
+								Reuben is the builder—the one you'll meet on site. His background isn't just residential—it's industrial.
 							</p>
 							<p>
-								Now, I bring that same level of commercial precision, safety, and "board-mark" quality to your residential projects.
+								He spent over 10 years with <strong>Fletcher Engineering</strong> on major NZ infrastructure, working as a foreman and supervisor on projects like the <strong>North Shore Hospital</strong> and the <strong>ANZ Tower extension</strong>.
+							</p>
+							<p>
+								Now, he brings that same level of commercial precision, safety, and "board-mark" quality to your residential projects.
 							</p>
 						</div>
 
@@ -137,26 +157,6 @@ import Layout from '../layouts/Layout.astro';
 								<dd class="mt-1 text-xl font-heading font-bold text-white pt-2">Whangarei</dd>
 							</div>
 						</dl>
-					</div>
-
-					<!-- Right Column: The Image & Quote -->
-					<div class="lg:col-span-5 mt-12 lg:mt-0">
-						<div class="relative group">
-							<!-- Industrial Frame effect -->
-							<div class="absolute -inset-2 border-2 border-gray-700 rounded-xl transform rotate-2 group-hover:rotate-1 transition-transform"></div>
-							<div class="relative rounded-xl overflow-hidden shadow-2xl bg-gray-800">
-								<img src="/profile.jpg" alt="Reuben and wife" class="w-full h-auto grayscale contrast-125 hover:grayscale-0 transition-all duration-700 ease-in-out" />
-							</div>
-							
-							<!-- Floating Quote Card -->
-							<div class="absolute -bottom-6 -left-6 bg-brand-accent p-6 rounded-lg shadow-xl max-w-xs transform -rotate-1 border border-white/20">
-								<svg class="h-8 w-8 text-black/20 mb-2" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 8.44772 14.017 9V11C14.017 11.5523 13.5693 12 13.017 12H12.017V5H22.017V15C22.017 18.3137 19.3307 21 16.017 21H14.017ZM5.0166 21L5.0166 18C5.0166 16.8954 5.91203 16 7.0166 16H10.0166C10.5689 16 11.0166 15.5523 11.0166 15V9C11.0166 8.44772 10.5689 8 10.0166 8H6.0166C5.46432 8 5.0166 8.44772 5.0166 9V11C5.0166 11.5523 4.56889 12 4.0166 12H3.0166V5H13.0166V15C13.0166 18.3137 10.3303 21 7.0166 21H5.0166Z"/></svg>
-								<p class="text-brand-dark font-bold text-sm leading-relaxed">
-									"Thank you for being so fast and efficient."
-								</p>
-								<p class="text-brand-dark/60 text-xs font-bold uppercase mt-3">— Happy Client</p>
-							</div>
-						</div>
 					</div>
 
 				</div>
