@@ -10,7 +10,7 @@ import Layout from '../layouts/Layout.astro';
 			<div class="flex items-center justify-between h-24">
 				
 				<!-- LOGO AREA -->
-				<div class="flex-shrink-0 flex items-center">
+				<div class="shrink-0 flex items-center">
 					<a href="#" class="group block">
 						<img
 							src="/logo-white.svg"
@@ -48,7 +48,7 @@ import Layout from '../layouts/Layout.astro';
 		<!-- HERO SECTION -->
 		<div class="relative pt-36 pb-20 sm:pb-24 overflow-hidden bg-brand-zinc">
 			<!-- Background Grid Texture -->
-			<div class="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] [background-size:24px_24px]"></div>
+			<div class="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-size-[24px_24px]"></div>
 
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 				<div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
@@ -81,7 +81,7 @@ import Layout from '../layouts/Layout.astro';
 							<!-- Industrial Frame effect -->
 							<div class="absolute -inset-2 border-2 border-brand-accent/30 rounded-xl transform rotate-2 group-hover:rotate-1 transition-transform"></div>
 							<div class="relative rounded-xl overflow-hidden shadow-2xl h-[500px] lg:h-[600px]">
-								<img src="/work-deck.jpg" alt="Deck construction" class="w-full h-full object-cover" />
+								<img src="/deck-stairs.png" alt="Deck construction" class="w-full h-full object-cover" />
 							</div>
 						</div>
 					</div>
@@ -90,29 +90,34 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 
 		<!-- ABOUT SECTION (UPDATED FOR AUTHORITY) -->
-		<section id="about" class="py-24 bg-brand-dark relative border-t border-gray-800">
+		<section id="about" class="py-32 bg-brand-dark relative border-t border-gray-800">
 			<!-- Subtle background texture -->
-			<div class="absolute inset-0 opacity-5 bg-[radial-gradient(#4b5563_1px,transparent_1px)] [background-size:16px_16px]"></div>
+			<div class="absolute inset-0 opacity-5 bg-[radial-gradient(#4b5563_1px,transparent_1px)] bg-size-[16px_16px]"></div>
 
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
 				<div class="lg:grid lg:grid-cols-12 lg:gap-16 items-start">
 
 					<!-- Left Column: The Image & Quote -->
 					<div class="lg:col-span-5 mb-12 lg:mb-0">
-						<div class="relative group">
+						<div class="relative group mt-8">
 							<!-- Industrial Frame effect -->
 							<div class="absolute -inset-2 border-2 border-gray-700 rounded-xl transform -rotate-2 group-hover:-rotate-1 transition-transform"></div>
 							<div class="relative rounded-xl overflow-hidden shadow-2xl bg-gray-800">
-								<img src="/profile.jpg" alt="Reuben and wife" class="w-full h-auto grayscale contrast-125 hover:grayscale-0 transition-all duration-700 ease-in-out" />
+								<img src="/profile.jpg" alt="Reuben and Teneille" class="w-full h-auto grayscale contrast-125 hover:grayscale-0 transition-all duration-700 ease-in-out" />
+							</div>
+
+							<!-- Small Family Photo -->
+							<div class="absolute bottom--14 -left-6 w-48 h-48 rounded-lg overflow-hidden shadow-xl border-2 border-brand-dark transform -rotate-3 hover:rotate-0 transition-transform z-10 -translate-y-24">
+								<img src="/family.JPG" alt="Johnson family" class="w-full h-full object-cover" />
 							</div>
 
 							<!-- Floating Quote Card -->
-							<div class="absolute -bottom-6 -right-6 bg-brand-accent p-6 rounded-lg shadow-xl max-w-xs transform rotate-1 border border-white/20">
-								<svg class="h-8 w-8 text-black/20 mb-2" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 8.44772 14.017 9V11C14.017 11.5523 13.5693 12 13.017 12H12.017V5H22.017V15C22.017 18.3137 19.3307 21 16.017 21H14.017ZM5.0166 21L5.0166 18C5.0166 16.8954 5.91203 16 7.0166 16H10.0166C10.5689 16 11.0166 15.5523 11.0166 15V9C11.0166 8.44772 10.5689 8 10.0166 8H6.0166C5.46432 8 5.0166 8.44772 5.0166 9V11C5.0166 11.5523 4.56889 12 4.0166 12H3.0166V5H13.0166V15C13.0166 18.3137 10.3303 21 7.0166 21H5.0166Z"/></svg>
-								<p class="text-brand-dark font-bold text-sm leading-relaxed">
+							<div class="absolute -top-16 -right-6 bg-brand-accent p-4 rounded-lg shadow-xl max-w-[280px] transform rotate-1 border border-white/20">
+								<svg class="h-6 w-6 text-black/20 mb-1" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 8.44772 14.017 9V11C14.017 11.5523 13.5693 12 13.017 12H12.017V5H22.017V15C22.017 18.3137 19.3307 21 16.017 21H14.017ZM5.0166 21L5.0166 18C5.0166 16.8954 5.91203 16 7.0166 16H10.0166C10.5689 16 11.0166 15.5523 11.0166 15V9C11.0166 8.44772 10.5689 8 10.0166 8H6.0166C5.46432 8 5.0166 8.44772 5.0166 9V11C5.0166 11.5523 4.56889 12 4.0166 12H3.0166V5H13.0166V15C13.0166 18.3137 10.3303 21 7.0166 21H5.0166Z"/></svg>
+								<p class="text-brand-dark font-bold text-xs leading-relaxed">
 									"Thank you for being so fast and efficient."
 								</p>
-								<p class="text-brand-dark/60 text-xs font-bold uppercase mt-3">— Happy Client</p>
+								<p class="text-brand-dark/60 text-[10px] font-bold uppercase mt-2">— Happy Client</p>
 							</div>
 						</div>
 					</div>
@@ -129,7 +134,7 @@ import Layout from '../layouts/Layout.astro';
 
 						<div class="prose prose-lg prose-invert text-gray-400 mb-8">
 							<p>
-								Meet Reuben and Tinelle Johnson. We own and run Johnson & Sons together.
+								Meet Reuben and Teneille Johnson. We own and run Johnson & Sons together.
 							</p>
 							<p>
 								Reuben is the builder—the one you'll meet on site. His background isn't just residential—it's industrial.
@@ -140,6 +145,21 @@ import Layout from '../layouts/Layout.astro';
 							<p>
 								Now, he brings that same level of commercial precision, safety, and "board-mark" quality to your residential projects.
 							</p>
+						</div>
+
+						<!-- NZQA Certificate -->
+						<div class="mb-8 p-4 bg-gray-900 border border-gray-700 rounded-lg">
+							<div class="flex items-start gap-4">
+								<div class="shrink-0">
+									<img src="/certificate.png" alt="NZQA Carpentry Certificate - Reuben Johnson" class="w-32 h-auto rounded border-2 border-brand-accent shadow-lg" />
+								</div>
+								<div class="flex-1">
+									<h3 class="text-white font-bold text-lg mb-2">NZQA Qualified</h3>
+									<p class="text-gray-400 text-sm leading-relaxed">
+										Reuben holds a National Certificate in Carpentry, ensuring every project meets New Zealand building standards and industry best practices.
+									</p>
+								</div>
+							</div>
 						</div>
 
 						<!-- The "Stats" Bar -->
@@ -289,13 +309,58 @@ import Layout from '../layouts/Layout.astro';
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<h2 class="text-3xl font-heading font-bold text-white mb-10 text-center uppercase tracking-wide">Recent Work</h2>
 				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-					
+
 					<div class="group relative overflow-hidden rounded-lg border border-gray-800 bg-gray-900">
 						<div class="aspect-w-3 aspect-h-4">
 							<img src="/work-retaining.jpg" alt="Retaining Wall" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
 						</div>
-						<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex items-end p-6">
+						<div class="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent flex items-end p-6">
 							<h3 class="text-white font-bold text-lg translate-y-2 group-hover:translate-y-0 transition-transform">Retaining Construction</h3>
+						</div>
+					</div>
+
+					<div class="group relative overflow-hidden rounded-lg border border-gray-800 bg-gray-900">
+						<div class="aspect-w-3 aspect-h-4">
+							<img src="/deck-2.png" alt="Timber Deck Construction" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
+						</div>
+						<div class="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent flex items-end p-6">
+							<h3 class="text-white font-bold text-lg translate-y-2 group-hover:translate-y-0 transition-transform">Timber Decking</h3>
+						</div>
+					</div>
+
+					<div class="group relative overflow-hidden rounded-lg border border-gray-800 bg-gray-900">
+						<div class="aspect-w-3 aspect-h-4">
+							<img src="/louvre.png" alt="Louvre Installation" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
+						</div>
+						<div class="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent flex items-end p-6">
+							<h3 class="text-white font-bold text-lg translate-y-2 group-hover:translate-y-0 transition-transform">Louvre Systems</h3>
+						</div>
+					</div>
+
+					<div class="group relative overflow-hidden rounded-lg border border-gray-800 bg-gray-900">
+						<div class="aspect-w-3 aspect-h-4">
+							<img src="/lourve-2.png" alt="Louvre Construction Progress" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
+						</div>
+						<div class="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent flex items-end p-6">
+							<h3 class="text-white font-bold text-lg translate-y-2 group-hover:translate-y-0 transition-transform">Outdoor Living</h3>
+						</div>
+					</div>
+
+					<div class="group relative overflow-hidden rounded-lg border border-gray-800 bg-gray-900">
+						<div class="aspect-w-3 aspect-h-4">
+							<img src="/deck-stairs.png" alt="Custom Deck Stairs" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
+						</div>
+						<div class="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent flex items-end p-6">
+							<h3 class="text-white font-bold text-lg translate-y-2 group-hover:translate-y-0 transition-transform">Custom Deck Stairs</h3>
+						</div>
+					</div>
+
+					<div class="group relative overflow-hidden rounded-lg border border-gray-800 bg-gray-900">
+						<div class="aspect-w-3 aspect-h-4">
+							<img src="/step.png" alt="Deck Entry Step" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
+						</div>
+						<div class="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent flex items-end p-6">
+							<h3 class="text-white font-bold text-lg translate-y-2 group-hover:translate-y-0 transition-transform">Deck Entry Steps</h3>
 						</div>
 					</div>
 
@@ -303,7 +368,7 @@ import Layout from '../layouts/Layout.astro';
 						<div class="aspect-w-3 aspect-h-4">
 							<img src="/work-gate.jpg" alt="Wooden Gate" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
 						</div>
-						<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex items-end p-6">
+						<div class="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent flex items-end p-6">
 							<h3 class="text-white font-bold text-lg translate-y-2 group-hover:translate-y-0 transition-transform">Custom Fencing</h3>
 						</div>
 					</div>
@@ -312,8 +377,35 @@ import Layout from '../layouts/Layout.astro';
 						<div class="aspect-w-3 aspect-h-4">
 							<img src="/work-window-1.jpg" alt="Renovation" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
 						</div>
-						<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex items-end p-6">
+						<div class="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent flex items-end p-6">
 							<h3 class="text-white font-bold text-lg translate-y-2 group-hover:translate-y-0 transition-transform">Renovations</h3>
+						</div>
+					</div>
+
+					<div class="group relative overflow-hidden rounded-lg border border-gray-800 bg-gray-900">
+						<div class="aspect-w-3 aspect-h-4">
+							<img src="/work-deck.jpg" alt="Deck Construction" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
+						</div>
+						<div class="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent flex items-end p-6">
+							<h3 class="text-white font-bold text-lg translate-y-2 group-hover:translate-y-0 transition-transform">Deck Construction</h3>
+						</div>
+					</div>
+
+					<div class="group relative overflow-hidden rounded-lg border border-gray-800 bg-gray-900">
+						<div class="aspect-w-3 aspect-h-4">
+							<img src="/work-window-2.jpg" alt="Window Renovation Detail" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
+						</div>
+						<div class="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent flex items-end p-6">
+							<h3 class="text-white font-bold text-lg translate-y-2 group-hover:translate-y-0 transition-transform">Window Upgrades</h3>
+						</div>
+					</div>
+
+					<div class="group relative overflow-hidden rounded-lg border border-gray-800 bg-gray-900">
+						<div class="aspect-w-3 aspect-h-4">
+							<img src="/work-window-3.jpg" alt="Home Renovation Interior" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
+						</div>
+						<div class="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent flex items-end p-6">
+							<h3 class="text-white font-bold text-lg translate-y-2 group-hover:translate-y-0 transition-transform">Interior Renovations</h3>
 						</div>
 					</div>
 
@@ -347,17 +439,17 @@ import Layout from '../layouts/Layout.astro';
 						<div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-brand-accent text-brand-dark text-xs font-bold px-4 py-1 uppercase tracking-widest shadow-md border border-brand-dark">
 							Live Feed
 						</div>
-						
-						<div 
-							class="fb-page" 
-							data-href="https://www.facebook.com/profile.php?id=61580238470014" 
-							data-tabs="timeline" 
-							data-width="500" 
-							data-height="600" 
-							data-small-header="false" 
-							data-adapt-container-width="true" 
-							data-hide-cover="false" 
-							data-show-facepile="true">
+
+						<div
+							class="fb-page"
+							data-href="https://www.facebook.com/profile.php?id=61580238470014"
+							data-tabs="timeline"
+							data-width="500"
+							data-height="600"
+							data-small-header="true"
+							data-adapt-container-width="true"
+							data-hide-cover="true"
+							data-show-facepile="false">
 							<blockquote cite="https://www.facebook.com/profile.php?id=61580238470014" class="fb-xfbml-parse-ignore">
 								<a href="https://www.facebook.com/profile.php?id=61580238470014">Johnson & Sons Ltd</a>
 							</blockquote>
