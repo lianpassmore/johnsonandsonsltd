@@ -1,8 +1,10 @@
 ---
+// src/pages/index.astro
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Johnson & Sons Ltd | Whangarei Builders">
+<!-- OPTIMIZED TITLE FOR LOCAL SEO -->
+<Layout title="Johnson & Sons Ltd | Builders & Concrete Specialists Whangarei">
 	
 	<!-- NAV -->
 	<nav class="fixed w-full z-50 bg-brand-dark/95 border-b border-gray-800 backdrop-blur-sm transition-all duration-300">
@@ -14,7 +16,7 @@ import Layout from '../layouts/Layout.astro';
 					<a href="#" class="group block">
 						<img
 							src="/logo-white.svg"
-							alt="Johnson & Sons Ltd"
+							alt="Johnson & Sons Ltd Builders Whangarei Logo"
 							class="h-20 w-auto object-contain group-hover:opacity-90 transition-opacity"
 						/>
 					</a>
@@ -57,13 +59,13 @@ import Layout from '../layouts/Layout.astro';
 					<div class="sm:text-center md:max-w-2xl md:mx-auto lg:text-left">
 						<div class="inline-flex items-center text-brand-accent font-semibold tracking-wide uppercase text-sm mb-6 border border-brand-accent/30 bg-brand-accent/5 rounded-full px-3 py-1">
 							<span class="w-2 h-2 bg-brand-accent rounded-full mr-2 animate-pulse"></span>
-							Based in Whangarei
+							Based in Whangarei, Northland
 						</div>
 						<h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl font-heading leading-tight mb-6">
 							Built Strong. <br class="hidden lg:inline">Built Right.
 						</h1>
 						<p class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl leading-relaxed">
-							Family owned with industrial discipline. 21+ years experience delivering complex retaining walls, concrete works, and residential renovations.
+							Family owned builders with industrial discipline. 21+ years experience delivering complex retaining walls, concrete works, and residential renovations across Whangarei.
 						</p>
 						<div class="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0 flex flex-col sm:flex-row gap-4">
 							<a href="#contact" class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-bold rounded-md text-brand-dark bg-brand-accent hover:bg-white hover:scale-105 transition-all duration-200 shadow-lg uppercase tracking-wide">
@@ -81,7 +83,8 @@ import Layout from '../layouts/Layout.astro';
 							<!-- Industrial Frame effect -->
 							<div class="absolute -inset-2 border-2 border-brand-accent/30 rounded-xl transform rotate-2 group-hover:rotate-1 transition-transform"></div>
 							<div class="relative rounded-xl overflow-hidden shadow-2xl h-[500px] lg:h-[600px]">
-								<img src="/construction.jpeg" alt="Construction site" class="w-full h-full object-cover" />
+								<!-- OPTIMIZED ALT TEXT -->
+								<img src="/construction.jpeg" alt="Industrial concrete construction site in Northland" class="w-full h-full object-cover" />
 							</div>
 						</div>
 						<p class="text-gray-500 text-xs mt-3 text-center italic">Photo courtesy of Golden Bay Cement - Bulk Store and Service Centre</p>
@@ -90,7 +93,7 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 		</div>
 
-		<!-- ABOUT SECTION (UPDATED FOR AUTHORITY) -->
+		<!-- ABOUT SECTION -->
 		<section id="about" class="py-32 bg-brand-dark relative border-t border-gray-800">
 			<!-- Subtle background texture -->
 			<div class="absolute inset-0 opacity-5 bg-[radial-gradient(#4b5563_1px,transparent_1px)] bg-size-[16px_16px]"></div>
@@ -104,12 +107,12 @@ import Layout from '../layouts/Layout.astro';
 							<!-- Industrial Frame effect -->
 							<div class="absolute -inset-2 border-2 border-gray-700 rounded-xl transform -rotate-2 group-hover:-rotate-1 transition-transform"></div>
 							<div class="relative rounded-xl overflow-hidden shadow-2xl bg-gray-800">
-								<img src="/profile.jpg" alt="Reuben and Teneille" class="w-full h-auto grayscale contrast-125 hover:grayscale-0 transition-all duration-700 ease-in-out" />
+								<img src="/profile.jpg" alt="Reuben and Teneille Johnson, owners of Johnson & Sons Ltd" class="w-full h-auto grayscale contrast-125 hover:grayscale-0 transition-all duration-700 ease-in-out" />
 							</div>
 
-							<!-- Small Family Photo: Hidden on mobile (lg:block) to prevent overlapping text -->
+							<!-- Small Family Photo -->
 							<div class="hidden lg:block absolute -bottom-14 -left-6 w-48 h-48 rounded-lg overflow-hidden shadow-xl border-2 border-brand-dark transform -rotate-3 hover:rotate-0 transition-transform z-10">
-								<img src="/family.JPG" alt="Johnson family" class="w-full h-full object-cover" />
+								<img src="/family.JPG" alt="Johnson & Sons family owners" class="w-full h-full object-cover" />
 							</div>
 
 							<!-- Floating Quote Card -->
@@ -133,15 +136,15 @@ import Layout from '../layouts/Layout.astro';
 							<span class="text-gray-500">Small Business Care.</span>
 						</h2>
 
-<div class="prose prose-lg prose-invert text-gray-400 mb-8">
+						<div class="prose prose-lg prose-invert text-gray-400 mb-8">
 							<p>
-								Meet Reuben and Teneille Johnson. We own and run Johnson & Sons together. Reuben is the builder—the one you'll meet on site.
+								Meet Reuben and Teneille Johnson. We own and run Johnson & Sons together in Whangarei. Reuben is the builder—the one you'll meet on site.
 							</p>
 							<p>
 								His background isn't just residential—it's industrial.
 							</p>
 							<p>
-								He spent over 10 years with <strong>Fletcher Engineering</strong> in Auckland, working as a foreman on major infrastructure projects. He worked on the Onewa Road widening, the Golden Bay cement bulk store and service centre, and the Victoria Park tunnel where they handled the Rob Roy Hotel strengthening and relocation. He's poured 250mm insitu concrete water tanks with Douglas fir board mark plank pattern detailing, installed tunnel turbo jets, and worked on the Waterview Connection's northern access trench and base slab.
+								He spent over 10 years with <strong>Fletcher Engineering</strong> in Auckland, working as a foreman on major infrastructure projects. He worked on the Onewa Road widening, the Golden Bay cement bulk store and service centre, and the Victoria Park tunnel.
 							</p>
 							<p>
 								He also served as a supervisor on the <strong>North Shore Hospital</strong> and the <strong>ANZ Tower extension</strong>.
@@ -150,7 +153,7 @@ import Layout from '../layouts/Layout.astro';
 								That's over a decade of experience on Auckland's biggest infrastructure projects—the kind where precision, safety, and "board-mark" quality aren't optional, they're standard.
 							</p>
 							<p>
-								Now, he brings that same level of commercial discipline to your residential projects in Whangarei.
+								Now, he brings that same level of commercial discipline to your residential projects here in Northland.
 							</p>
 						</div>
 
@@ -161,7 +164,7 @@ import Layout from '../layouts/Layout.astro';
 									<img src="/certificate.png" alt="NZQA Carpentry Certificate - Reuben Johnson" class="w-32 h-auto rounded border-2 border-brand-accent shadow-lg" />
 								</div>
 								<div class="flex-1">
-									<h3 class="text-white font-bold text-lg mb-2">NZQA Qualified</h3>
+									<h3 class="text-white font-bold text-lg mb-2">NZQA Qualified Builder</h3>
 									<p class="text-gray-400 text-sm leading-relaxed">
 										Reuben holds a National Certificate in Carpentry, ensuring every project meets New Zealand building standards and industry best practices.
 									</p>
@@ -229,7 +232,7 @@ import Layout from '../layouts/Layout.astro';
 						</div>
 						<h3 class="text-xl font-bold text-white mb-3 font-heading">Retaining Walls</h3>
 						<p class="text-gray-400 leading-relaxed">
-							Structural landscaping and heavy-duty retaining solutions for difficult sites. If it needs to hold, we build it.
+							Structural landscaping and heavy-duty retaining solutions for difficult sites in Northland. If it needs to hold, we build it.
 						</p>
 					</div>
 
@@ -247,69 +250,69 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 		</section>
 
-<!-- FEATURED PROJECT STORY -->
-<section class="py-24 bg-brand-dark relative overflow-hidden">
-    <!-- Background element -->
-    <div class="absolute right-0 top-0 w-1/3 h-full bg-brand-zinc/30 skew-x-12 transform origin-top-right"></div>
-    
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="bg-gray-900 rounded-lg border border-gray-700 shadow-2xl overflow-hidden">
-            <div class="lg:grid lg:grid-cols-2">
-                
-                <!-- Left: The Hook -->
-                <div class="p-8 md:p-12 bg-brand-zinc border-r border-gray-700 flex flex-col justify-center">
-                    <div class="inline-flex items-center text-brand-accent font-bold tracking-widest uppercase text-xs mb-4">
-                        <span class="w-8 h-0.5 bg-brand-accent mr-3"></span>
-                        Project Spotlight
-                    </div>
-                    <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-6">
-                        The Retirement Home
-                    </h2>
-                    <div class="border-l-4 border-brand-accent pl-6 py-2 bg-black/20 rounded-r-md">
-                        <p class="text-white text-lg font-medium italic">
-                            "The estimate was a week's work. We had it sorted in two days."
-                        </p>
-                    </div>
-                    <div class="mt-8 grid grid-cols-2 gap-4">
-                        <div class="bg-brand-dark p-4 rounded border border-gray-700">
-                            <span class="block text-gray-500 text-xs uppercase tracking-wider">The Challenge</span>
-                            <span class="block text-white font-bold">Sagging Floors</span>
-                        </div>
-                        <div class="bg-brand-dark p-4 rounded border border-gray-700">
-                            <span class="block text-gray-500 text-xs uppercase tracking-wider">The Outcome</span>
-                            <span class="block text-white font-bold">Market Ready</span>
-                        </div>
-                    </div>
-                </div>
+		<!-- FEATURED PROJECT STORY -->
+		<section class="py-24 bg-brand-dark relative overflow-hidden">
+			<!-- Background element -->
+			<div class="absolute right-0 top-0 w-1/3 h-full bg-brand-zinc/30 skew-x-12 transform origin-top-right"></div>
+			
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+				<div class="bg-gray-900 rounded-lg border border-gray-700 shadow-2xl overflow-hidden">
+					<div class="lg:grid lg:grid-cols-2">
+						
+						<!-- Left: The Hook -->
+						<div class="p-8 md:p-12 bg-brand-zinc border-r border-gray-700 flex flex-col justify-center">
+							<div class="inline-flex items-center text-brand-accent font-bold tracking-widest uppercase text-xs mb-4">
+								<span class="w-8 h-0.5 bg-brand-accent mr-3"></span>
+								Project Spotlight
+							</div>
+							<h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-6">
+								The Retirement Home
+							</h2>
+							<div class="border-l-4 border-brand-accent pl-6 py-2 bg-black/20 rounded-r-md">
+								<p class="text-white text-lg font-medium italic">
+									"The estimate was a week's work. We had it sorted in two days."
+								</p>
+							</div>
+							<div class="mt-8 grid grid-cols-2 gap-4">
+								<div class="bg-brand-dark p-4 rounded border border-gray-700">
+									<span class="block text-gray-500 text-xs uppercase tracking-wider">The Challenge</span>
+									<span class="block text-white font-bold">Sagging Floors</span>
+								</div>
+								<div class="bg-brand-dark p-4 rounded border border-gray-700">
+									<span class="block text-gray-500 text-xs uppercase tracking-wider">The Outcome</span>
+									<span class="block text-white font-bold">Market Ready</span>
+								</div>
+							</div>
+						</div>
 
-                <!-- Right: The Story -->
-                <div class="p-8 md:p-12 flex flex-col justify-center">
-                    <div class="prose prose-lg prose-invert text-gray-400">
-                        <p class="mb-4">
-                            Just before we officially started Johnson & Sons, I got a call from a mate about an older couple preparing their family home for sale. Their retirement fund depended on getting it market-ready, but the floor had sagged badly over the years.
-                        </p>
-                        <p class="mb-4">
-                            We fixed the floor in two days—well under the expected week. But here's the thing about residential renovations: <strong class="text-white">once you open up an old home, you find everything else that needs attention.</strong>
-                        </p>
-                        <p class="mb-6">
-                            That two-day fix turned into 14 weeks of work. We stayed to help them get the entire house right for sale.
-                        </p>
-                        <p class="text-white font-bold border-t border-gray-700 pt-6">
-                            It's the kind of project that reminds you why we do this. Not just to pour concrete or hang timber, but to help people move forward with the next chapter of their lives.
-                        </p>
-                    </div>
-                    <div class="mt-8 flex items-center gap-3">
-                        <div class="h-10 w-10 rounded-full bg-brand-accent flex items-center justify-center text-brand-dark font-bold">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-                        </div>
-                        <span class="text-sm text-gray-400 font-medium">The Johnson & Sons Difference</span>
-                    </div>
-                </div>
+						<!-- Right: The Story -->
+						<div class="p-8 md:p-12 flex flex-col justify-center">
+							<div class="prose prose-lg prose-invert text-gray-400">
+								<p class="mb-4">
+									Just before we officially started Johnson & Sons, I got a call from a mate about an older couple preparing their family home for sale. Their retirement fund depended on getting it market-ready, but the floor had sagged badly over the years.
+								</p>
+								<p class="mb-4">
+									We fixed the floor in two days—well under the expected week. But here's the thing about residential renovations: <strong class="text-white">once you open up an old home, you find everything else that needs attention.</strong>
+								</p>
+								<p class="mb-6">
+									That two-day fix turned into 14 weeks of work. We stayed to help them get the entire house right for sale.
+								</p>
+								<p class="text-white font-bold border-t border-gray-700 pt-6">
+									It's the kind of project that reminds you why we do this. Not just to pour concrete or hang timber, but to help people move forward with the next chapter of their lives.
+								</p>
+							</div>
+							<div class="mt-8 flex items-center gap-3">
+								<div class="h-10 w-10 rounded-full bg-brand-accent flex items-center justify-center text-brand-dark font-bold">
+									<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+								</div>
+								<span class="text-sm text-gray-400 font-medium">The Johnson & Sons Difference</span>
+							</div>
+						</div>
 
-            </div>
-        </div>
-    </div>
-</section>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		<!-- PROJECT GALLERY -->
 		<section id="projects" class="py-24 bg-brand-dark">
@@ -319,7 +322,7 @@ import Layout from '../layouts/Layout.astro';
 
 					<div class="group relative overflow-hidden rounded-lg border border-gray-800 bg-gray-900">
 						<div class="aspect-w-3 aspect-h-4">
-							<img src="/work-retaining.jpg" alt="Retaining Wall" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
+							<img src="/work-retaining.jpg" alt="Timber Retaining Wall Construction Whangarei" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
 						</div>
 						<div class="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent flex items-end p-6">
 							<h3 class="text-white font-bold text-lg translate-y-2 group-hover:translate-y-0 transition-transform">Retaining Construction</h3>
@@ -328,7 +331,7 @@ import Layout from '../layouts/Layout.astro';
 
 					<div class="group relative overflow-hidden rounded-lg border border-gray-800 bg-gray-900">
 						<div class="aspect-w-3 aspect-h-4">
-							<img src="/deck-2.png" alt="Timber Deck Construction" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
+							<img src="/deck-2.png" alt="Custom Timber Deck Construction Northland" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
 						</div>
 						<div class="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent flex items-end p-6">
 							<h3 class="text-white font-bold text-lg translate-y-2 group-hover:translate-y-0 transition-transform">Timber Decking</h3>
@@ -337,7 +340,7 @@ import Layout from '../layouts/Layout.astro';
 
 					<div class="group relative overflow-hidden rounded-lg border border-gray-800 bg-gray-900">
 						<div class="aspect-w-3 aspect-h-4">
-							<img src="/louvre.png" alt="Louvre Installation" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
+							<img src="/louvre.png" alt="Automated Louvre Roof Installation" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
 						</div>
 						<div class="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent flex items-end p-6">
 							<h3 class="text-white font-bold text-lg translate-y-2 group-hover:translate-y-0 transition-transform">Louvre Systems</h3>
@@ -346,7 +349,7 @@ import Layout from '../layouts/Layout.astro';
 
 					<div class="group relative overflow-hidden rounded-lg border border-gray-800 bg-gray-900">
 						<div class="aspect-w-3 aspect-h-4">
-							<img src="/lourve-2.png" alt="Louvre Construction Progress" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
+							<img src="/lourve-2.png" alt="Louvre Roof Construction Progress" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
 						</div>
 						<div class="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent flex items-end p-6">
 							<h3 class="text-white font-bold text-lg translate-y-2 group-hover:translate-y-0 transition-transform">Outdoor Living</h3>
@@ -355,7 +358,7 @@ import Layout from '../layouts/Layout.astro';
 
 					<div class="group relative overflow-hidden rounded-lg border border-gray-800 bg-gray-900">
 						<div class="aspect-w-3 aspect-h-4">
-							<img src="/deck-stairs.png" alt="Custom Deck Stairs" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
+							<img src="/deck-stairs.png" alt="Custom Timber Deck Stairs Detail" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
 						</div>
 						<div class="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent flex items-end p-6">
 							<h3 class="text-white font-bold text-lg translate-y-2 group-hover:translate-y-0 transition-transform">Custom Deck Stairs</h3>
@@ -364,7 +367,7 @@ import Layout from '../layouts/Layout.astro';
 
 					<div class="group relative overflow-hidden rounded-lg border border-gray-800 bg-gray-900">
 						<div class="aspect-w-3 aspect-h-4">
-							<img src="/step.png" alt="Deck Entry Step" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
+							<img src="/step.png" alt="Timber Deck Entry Step Construction" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
 						</div>
 						<div class="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent flex items-end p-6">
 							<h3 class="text-white font-bold text-lg translate-y-2 group-hover:translate-y-0 transition-transform">Deck Entry Steps</h3>
@@ -373,7 +376,7 @@ import Layout from '../layouts/Layout.astro';
 
 					<div class="group relative overflow-hidden rounded-lg border border-gray-800 bg-gray-900">
 						<div class="aspect-w-3 aspect-h-4">
-							<img src="/work-gate.jpg" alt="Wooden Gate" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
+							<img src="/work-gate.jpg" alt="Custom Wooden Fence Gate Whangarei" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
 						</div>
 						<div class="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent flex items-end p-6">
 							<h3 class="text-white font-bold text-lg translate-y-2 group-hover:translate-y-0 transition-transform">Custom Fencing</h3>
@@ -382,7 +385,7 @@ import Layout from '../layouts/Layout.astro';
 
 					<div class="group relative overflow-hidden rounded-lg border border-gray-800 bg-gray-900">
 						<div class="aspect-w-3 aspect-h-4">
-							<img src="/work-window-1.jpg" alt="Renovation" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
+							<img src="/work-window-1.jpg" alt="Home Renovation Window Installation" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
 						</div>
 						<div class="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent flex items-end p-6">
 							<h3 class="text-white font-bold text-lg translate-y-2 group-hover:translate-y-0 transition-transform">Renovations</h3>
@@ -391,7 +394,7 @@ import Layout from '../layouts/Layout.astro';
 
 					<div class="group relative overflow-hidden rounded-lg border border-gray-800 bg-gray-900">
 						<div class="aspect-w-3 aspect-h-4">
-							<img src="/work-deck.jpg" alt="Deck Construction" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
+							<img src="/work-deck.jpg" alt="Large Timber Deck Construction" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
 						</div>
 						<div class="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent flex items-end p-6">
 							<h3 class="text-white font-bold text-lg translate-y-2 group-hover:translate-y-0 transition-transform">Deck Construction</h3>
@@ -400,7 +403,7 @@ import Layout from '../layouts/Layout.astro';
 
 					<div class="group relative overflow-hidden rounded-lg border border-gray-800 bg-gray-900">
 						<div class="aspect-w-3 aspect-h-4">
-							<img src="/work-window-2.jpg" alt="Window Renovation Detail" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
+							<img src="/work-window-2.jpg" alt="Joinery and Window Renovation Detail" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
 						</div>
 						<div class="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent flex items-end p-6">
 							<h3 class="text-white font-bold text-lg translate-y-2 group-hover:translate-y-0 transition-transform">Window Upgrades</h3>
@@ -409,7 +412,7 @@ import Layout from '../layouts/Layout.astro';
 
 					<div class="group relative overflow-hidden rounded-lg border border-gray-800 bg-gray-900">
 						<div class="aspect-w-3 aspect-h-4">
-							<img src="/work-window-3.jpg" alt="Home Renovation Interior" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
+							<img src="/work-window-3.jpg" alt="Interior Home Renovation Whangarei" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
 						</div>
 						<div class="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent flex items-end p-6">
 							<h3 class="text-white font-bold text-lg translate-y-2 group-hover:translate-y-0 transition-transform">Interior Renovations</h3>
@@ -505,7 +508,7 @@ import Layout from '../layouts/Layout.astro';
 				<!-- Copyright -->
 				<div class="text-gray-500 text-sm text-center md:text-left">
 					<p>&copy; {new Date().getFullYear()} Johnson & Sons Ltd.</p>
-					<p class="mt-1">NZQA Qualified Builder. All rights reserved.</p>
+					<p class="mt-1">NZQA Qualified Builder in Whangarei. All rights reserved.</p>
 				</div>
 
 				<!-- Social Link -->
@@ -520,7 +523,7 @@ import Layout from '../layouts/Layout.astro';
 			<div class="border-t border-gray-900 pt-8 flex justify-center w-full mt-8">
 				<a href="https://yourhq.co.nz" target="_blank" class="group flex items-center gap-3 opacity-40 hover:opacity-100 transition-all duration-300">
 					<span class="text-xs text-gray-500 font-medium tracking-wide">Website made and hosted by</span>
-					<img src="/yourhq-logo.svg" alt="YourHQ" class="h-5 w-auto grayscale group-hover:grayscale-0 transition-all" />
+					<img src="/yourhq-logo.svg" alt="YourHQ - Websites for Tradies" class="h-5 w-auto grayscale group-hover:grayscale-0 transition-all" />
 				</a>
 			</div>
 		</footer>
