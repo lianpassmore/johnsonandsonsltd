@@ -77,18 +77,53 @@ import Layout from '../layouts/Layout.astro';
 						</div>
 					</div>
 
-					<!-- Hero Image -->
+					<!-- Hero Image Slideshow -->
 					<div class="mt-12 lg:mt-0">
-						<div class="relative group">
+						<div class="relative hero-slideshow">
 							<!-- Industrial Frame effect -->
-							<div class="absolute -inset-2 border-2 border-brand-accent/30 rounded-xl transform rotate-2 group-hover:rotate-1 transition-transform"></div>
+							<div class="absolute -inset-2 border-2 border-brand-accent/30 rounded-xl transform rotate-2 transition-transform"></div>
 							<div class="relative rounded-xl overflow-hidden shadow-2xl h-[500px] lg:h-[600px]">
-								<!-- OPTIMIZED ALT TEXT -->
-								<img src="/construction.jpeg" alt="Industrial concrete construction site in Northland" class="w-full h-full object-cover" />
+								<!-- Construction Image -->
+								<img
+									src="/construction.jpeg"
+									alt="Industrial concrete construction site in Northland"
+									class="hero-slide absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-1000"
+								/>
+								<!-- Rob Roy Image -->
+								<img
+									src="/robroy.jpeg"
+									alt="Rob Roy Hotel relocation project - Victoria Park Tunnel"
+									class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000"
+								/>
 							</div>
 						</div>
-						<p class="text-gray-500 text-xs mt-3 text-center italic">Photo courtesy of Golden Bay Cement - Bulk Store and Service Centre</p>
+						<p class="text-gray-500 text-xs mt-3 text-center italic">Photos courtesy of Golden Bay Cement Bulk Store and Rob Roy Hotel Relocation projects</p>
 					</div>
+
+					<script>
+						// Hero slideshow functionality
+						let currentSlide = 0;
+						const slides = document.querySelectorAll<HTMLImageElement>('.hero-slide');
+						const totalSlides = slides.length;
+
+						function showNextSlide() {
+							// Hide current slide
+							if (slides[currentSlide]) {
+								slides[currentSlide].style.opacity = '0';
+							}
+
+							// Move to next slide
+							currentSlide = (currentSlide + 1) % totalSlides;
+
+							// Show next slide
+							if (slides[currentSlide]) {
+								slides[currentSlide].style.opacity = '1';
+							}
+						}
+
+						// Change slide every 5 seconds
+						setInterval(showNextSlide, 5000);
+					</script>
 				</div>
 			</div>
 		</div>
