@@ -1,0 +1,15 @@
+# robots.txt for Johnson & Sons Ltd
+# https://johnsonandsonsltd.co.nz
+
+User-agent: *
+Allow: /
+
+# Sitemap
+# Sitemap: https://johnsonandsonsltd.co.nz/sitemap.xml
+
+# Block access to assets that don't need indexing
+User-agent: *
+Disallow: /favicon.svg
+
+# LLMs.txt
+# See /llms.txt for LLM-readable site information
